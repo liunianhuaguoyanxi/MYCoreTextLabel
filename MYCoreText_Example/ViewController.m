@@ -11,7 +11,7 @@
 #import "LinksViewController.h"
 #import "KeywordViewController.h"
 #import "DetailViewController.h"
-
+#import "ChatViewController.h"
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 
 @property (nonatomic, strong) UITableView *tableView;
@@ -24,7 +24,7 @@
 - (NSArray *)munesArray
 {
     if (!_munesArray) {
-        _munesArray = @[@"只展示图片/表情,其他链接不展示",@"只展示链接,其他不展示",@"只展示关键字,其他不展示",@"最复杂的情况,所有特性都展示"];
+        _munesArray = @[@"只展示图片/表情,其他链接不展示",@"只展示链接,其他不展示",@"只展示关键字,其他不展示",@"最复杂的情况,所有特性都展示",@"聊天气泡界面"];
     }
     return _munesArray;
 }
@@ -92,6 +92,12 @@
         {
             DetailViewController *imageVc = [[DetailViewController alloc]init];
             [self.navigationController pushViewController:imageVc animated:YES];
+        }
+            break;
+        case 4:
+        {
+            ChatViewController *chantVc = [[ChatViewController alloc]init];
+            [self.navigationController pushViewController:chantVc animated:YES];
         }
             break;
         default:

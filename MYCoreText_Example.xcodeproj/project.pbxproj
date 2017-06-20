@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8F4863861EF915B9001F8B19 /* bubble-chat-red@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F4863841EF915B9001F8B19 /* bubble-chat-red@2x.png */; };
+		8F4863871EF915B9001F8B19 /* buble-chat-white@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F4863851EF915B9001F8B19 /* buble-chat-white@2x.png */; };
+		8F48638A1EF915D7001F8B19 /* ChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F4863891EF915D7001F8B19 /* ChatViewController.m */; };
 		B801263E1E56BFAF006BAF70 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B801263D1E56BFAF006BAF70 /* main.m */; };
 		B80126411E56BFAF006BAF70 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B80126401E56BFAF006BAF70 /* AppDelegate.m */; };
 		B80126441E56BFAF006BAF70 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B80126431E56BFAF006BAF70 /* ViewController.m */; };
@@ -44,6 +47,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8F4863841EF915B9001F8B19 /* bubble-chat-red@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bubble-chat-red@2x.png"; sourceTree = "<group>"; };
+		8F4863851EF915B9001F8B19 /* buble-chat-white@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "buble-chat-white@2x.png"; sourceTree = "<group>"; };
+		8F4863881EF915D7001F8B19 /* ChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatViewController.h; sourceTree = "<group>"; };
+		8F4863891EF915D7001F8B19 /* ChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatViewController.m; sourceTree = "<group>"; };
 		B80126391E56BFAF006BAF70 /* MYCoreText_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MYCoreText_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B801263D1E56BFAF006BAF70 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B801263F1E56BFAF006BAF70 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -128,6 +135,8 @@
 		B801263B1E56BFAF006BAF70 /* MYCoreText_Example */ = {
 			isa = PBXGroup;
 			children = (
+				8F4863841EF915B9001F8B19 /* bubble-chat-red@2x.png */,
+				8F4863851EF915B9001F8B19 /* buble-chat-white@2x.png */,
 				B8894BD91E816D3100CC06DA /* Controllers(各个场景使用说明) */,
 				B801268F1E56C016006BAF70 /* MYCoreTextLabel */,
 				B801263F1E56BFAF006BAF70 /* AppDelegate.h */,
@@ -185,6 +194,8 @@
 		B8894BD91E816D3100CC06DA /* Controllers(各个场景使用说明) */ = {
 			isa = PBXGroup;
 			children = (
+				8F4863881EF915D7001F8B19 /* ChatViewController.h */,
+				8F4863891EF915D7001F8B19 /* ChatViewController.m */,
 				B8894BDA1E816D3100CC06DA /* DetailViewController.h */,
 				B8894BDB1E816D3100CC06DA /* DetailViewController.m */,
 				B8894BDC1E816D3100CC06DA /* ImageViewController.h */,
@@ -263,7 +274,7 @@
 		B80126311E56BFAF006BAF70 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = mengyao;
 				TargetAttributes = {
 					B80126381E56BFAF006BAF70 = {
@@ -307,7 +318,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F4863861EF915B9001F8B19 /* bubble-chat-red@2x.png in Resources */,
 				B801264C1E56BFAF006BAF70 /* LaunchScreen.storyboard in Resources */,
+				8F4863871EF915B9001F8B19 /* buble-chat-white@2x.png in Resources */,
 				B80126491E56BFAF006BAF70 /* Assets.xcassets in Resources */,
 				B80126471E56BFAF006BAF70 /* Main.storyboard in Resources */,
 			);
@@ -334,6 +347,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F48638A1EF915D7001F8B19 /* ChatViewController.m in Sources */,
 				B8894BE81E816D3100CC06DA /* KeywordViewController.m in Sources */,
 				B8894BEA1E816D3100CC06DA /* showCell.m in Sources */,
 				B80126991E56C016006BAF70 /* MYCoreTextLabel.m in Sources */,
@@ -418,6 +432,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -466,6 +481,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;

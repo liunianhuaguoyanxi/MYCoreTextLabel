@@ -30,7 +30,7 @@ typedef void(^eventCallback)(NSString *linkString);
 
 @end
 
-@interface MYCoreTextLabel : UIView
+@interface MYCoreTextLabel : UIButton
 
 /**
  代理
@@ -118,7 +118,10 @@ typedef void(^eventCallback)(NSString *linkString);
 + (instancetype)coreTextLabel;
 
 - (void)setText:(NSString *)text;
-
+/**
+ 增加聊天气泡
+ */
+- (void)addChatbubbleFromMe:(BOOL)fromMe;
 /**
   设置内容 , linkRanges可以指定 对应range位置的字符串为连接类型 , 代理回调链接类型为MYLinkTypeCustomLink自定义字符串链接类型
  

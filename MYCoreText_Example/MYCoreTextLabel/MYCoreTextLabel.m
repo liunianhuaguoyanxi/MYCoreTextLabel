@@ -438,7 +438,30 @@
     return viewSize;
 }
 
-
+#pragma mark - 增加气泡
+- (void)addChatbubbleFromMe:(BOOL)fromMe;
+{
+    if (fromMe) {
+        UIImage *normal;
+        normal = [UIImage imageNamed:@"buble-chat-white"];
+        normal = [normal resizableImageWithCapInsets:UIEdgeInsetsMake(35, 22, 10, 10)];
+        [self setBackgroundImage:normal forState:UIControlStateNormal];
+        
+        self.contentTextView.textContainerInset=UIEdgeInsetsMake(10, 10, 10, 0);;
+        [self setBackgroundImage:normal forState:UIControlStateHighlighted];
+    }else
+    {
+        UIImage *normal;
+        normal = [UIImage imageNamed:@"bubble-chat-red"];
+        normal = [normal resizableImageWithCapInsets:UIEdgeInsetsMake(25, 10, 10, 22)];
+        [self setBackgroundImage:normal forState:UIControlStateNormal];
+        
+        self.contentTextView.textContainerInset=UIEdgeInsetsMake(10, 5, 10, 5);
+        [self setBackgroundImage:normal forState:UIControlStateHighlighted];
+        
+    }
+    
+}
 #pragma mark - 复用处理
 - (void)reuseHandle
 {
